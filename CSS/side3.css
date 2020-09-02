@@ -1,0 +1,405 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*Font CSS*/
+
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap);
+
+/*Contact Form CSS*/
+
+.facebook{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins' ,  sans-serif;
+
+}
+
+/*Big dark blue box padding*/
+section{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 800px;
+	background: #1D1445;
+
+}
+
+section::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%; 
+}
+
+/*Padding Dark Blue and White Box*/
+section .container{
+	position: relative;
+	width: 1300px;
+	height: 700px;
+	display: flex;
+	z-index: 1000;
+	padding-right: 100px;
+}
+
+/*Dark Blue Box*/
+section .container .contactinfo{
+	position: absolute;
+	top: 40px;
+	width: 350px;
+	height: 550px;
+	background: #0f3959;
+	z-index: 1;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+section .container .contactinfo h2{
+	color: #fff;
+	font-size: 24px;
+	font-weight: 700;
+	padding-bottom: 20px;
+
+
+}
+
+section .container .contactinfo h3{
+	color: #fff;
+	font-size: 24px;
+	font-weight: 700;
+	padding-bottom: 30px;
+
+
+
+}
+
+section .container .contactinfo .info{
+	position: relative;
+	margin: 20px 0;
+
+
+}
+
+section .container .contactinfo .info li{
+	position: relative;
+	list-style: none;
+	display: flex;
+	margin: 20px 0;
+	cursor: pointer;
+	align-items: flex-start;
+}
+
+/*Size of location, call, mail*/
+section .container .contactinfo .info li span:nth-child(1){
+	width: 40px;
+
+}
+
+/*Size of location, call, mail*/
+/*filter is color white on img*/
+/*opacity is how strong the color white is on img*/
+section .container .contactinfo .info li span:nth-child(1) img{
+	max-width: 100%;
+	filter: invert(1);
+	opacity: 0.5;
+
+}
+
+/*Size, color, margin of text*/
+section .container .contactinfo .info li span:nth-child(2){
+	color: #fff;
+	margin-left: 25px;
+	font-weight: 300;
+	opacity: 0.5;
+	font-size: 17px;
+}
+
+/*How to make the text and image go from dark to white
+select the item with classes and img and add :hover to li or p or h1 whatever*/
+section .container .contactinfo .info li:hover span:nth-child(1) img,
+section .container .contactinfo .info li:hover span:nth-child(2){
+	opacity: 1;
+
+}
+
+section .container .contactinfo .sci{
+	position: relative;
+	display: flex;
+
+}
+
+section .container .contactinfo .sci li{
+	list-style: none;
+	margin-right: 15px;
+
+}
+
+section .container .contactinfo .sci li a{
+	text-decoration: none;
+
+}
+
+section .container li a img{
+	filter: invert(1);
+	opacity: 0.5;
+
+}
+
+section li:hover a img{
+	opacity: 1;
+}
+
+section .container .contactForm{
+	position: relative;
+	padding: 70px 50px 300px;
+	background: #fff;
+	margin-left: 180px;
+	padding-left: 330px;
+	width: 700px;
+	height: 170px;
+	box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+}
+
+/*Send a message*/
+section .container .contactForm h2{
+	color: #0f3959;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+section .container .contactForm .formBox{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-top: 30px;
+}
+
+section .container .contactForm .formBox .inputBox{
+	position: relative;
+	margin: 0 0 35px 0;
+}
+
+section .container .contactForm .formBox .inputBox.w50{
+	width: 47%;
+}
+
+section .container .contactForm .formBox .inputBox.w100{
+	width: 100%;
+}
+
+section .container .contactForm .formBox .inputBox input,
+section .container .contactForm .formBox .inputBox textarea{
+	width: 100% !important;
+	padding: 5px 0;
+	resize: none;
+	font-size: 18px;
+	font-weight: 300;
+	color: #333;
+	border: none;
+	border-bottom: 1px solid #777;
+	outline: none;
+}
+
+section .container .contactForm .formBox .inputBox textarea{
+	height: 120px;
+}
+
+section .container .contactForm .formBox .inputBox span{
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	font-size: 18px;
+	font-weight: 300;
+	color: #333;
+	transition: 0.5s;
+	pointer-events: none;
+}
+
+section .container .contactForm .formBox .inputBox input:focus ~ span,
+section .container .contactForm .formBox .inputBox textarea:focus ~ span,
+section .container .contactForm .formBox .inputBox input:valid ~ span,
+section .container .contactForm .formBox .inputBox textarea:valid ~ span{
+	transform: translateY(-20px);
+	font-size: 12px;
+	font-weight: 200;
+	letter-spacing: 1px;
+	color: #1D1445; 
+
+}
+
+section .container .contactForm .formBox .inputBox input[type="submit"]{
+	position: relative;
+	cursor: pointer;
+	background: #0f3959;
+	color: #fff;
+	border: none;
+	width: 150px;
+	padding: 12px;
+}
+
+section .container .contactForm .formBox .inputBox input:hover[type="submit"]{
+	background: #1D1445;
+
+}
+
+/*Header CSS*/
+
+header h1{
+	font-family: sans;
+	font-size: 40px;
+
+}
+
+header{
+	padding-top: 40px;
+	padding-left: 50px;
+
+}
+
+/*Dato CSS*/
+
+.dato{
+	font-family: helvetica, arial;
+	font-size: 18px;
+	font-weight: bold;
+	padding-left: 1310px;
+
+}
+
+/*Klokka CSS*/
+
+.klokka{
+	font-family: helvetica, arial;
+	font-size: 18px;
+	font-weight: bold;
+	padding-left: 1300px;
+
+}
+
+/*Main CSS*/
+
+.fag p{
+	padding-top: 30px;
+	font-size: 25px;
+	font-family: sans;
+	font-weight: bold;
+	padding-bottom: 30px;
+}
+
+.fag1 p{
+	padding-top: 30px;
+	font-size: 25px;
+	font-family: sans;
+	font-weight: bold;
+	padding-bottom: 30px;
+}
+
+.text1 p{
+	font-family: helvetica, arial;
+
+}
+
+/*Date CSS*/
+
+.date{
+	font-size: 17px;
+	text-align: center;
+}
+
+/*Main CSS*/
+
+main{
+	padding-left: 50px;
+
+}
+
+/*Body CSS*/
+
+body{
+	background-color: #fff;
+
+}
+
+/*Navigation BarsCSS*/
+
+.home ul{
+
+
+}
+
+.home ul li{
+	list-style: none;
+	display: inline-block;
+	float: left;
+}
+
+.home ul li a{
+	color: black;
+	font-size: 15px;
+	font-family: helvetica, arial;
+	text-decoration: none;
+	line-height: 100px;
+	padding: 0 20px;
+	font-weight: bold;
+	display: block;
+	
+}
+
+.home ul li a:hover{
+	color: #483a84;
+}
+
+nav{
+	width: 100%;
+	height: 100px;
+	background-color: #E6E8F9;
+
+}
+
+ul{
+	padding-bottom: 30px;
+
+}
+
+ul li{
+	list-style: none;
+	padding-bottom: 2px;
+}
+
+ul li a{
+	color: black;
+	font-family: helvetica, arial;
+	font-size: 15px;
+}
+
+ul li a:hover{
+	color: #483a84;
+}
+
+/*Footer CSS*/
+
+footer{
+	text-align: center;
+	background-color: #E6E8F9;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+footer a{
+	text-decoration: none;
+	color: black;
+}
+
+footer a:hover{
+	color: #483a84;
+
+}

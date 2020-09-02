@@ -1,0 +1,133 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*Header CSS*/
+
+header h1{
+	font-family: sans;
+	font-size: 40px;
+
+}
+
+header{
+	padding-top: 40px;
+	padding-bottom: 20px;
+	text-align: center;
+
+}
+
+/*Dato CSS*/
+
+.dato{
+	font-family: helvetica, arial;
+	font-size: 18px;
+	font-weight: bold;
+	padding-left: 1310px;
+
+}
+
+/*Klokka CSS*/
+
+.klokka{
+	font-family: helvetica, arial;
+	font-size: 18px;
+	font-weight: bold;
+	padding-left: 1300px;
+
+}
+
+/*Main CSS*/
+
+.katta img{
+	padding-top: 20px;
+
+}
+
+.katta{
+	padding-bottom: 30px;
+	padding-top: 30px;
+
+}
+.katta p{
+	font-size: 17px;
+	font-family: helvetica, arial;
+
+}
+
+/*Date CSS*/
+
+.date{
+	font-size: 17px;
+	text-align: center;
+}
+
+/*Main CSS*/
+
+main{
+	padding-left: 50px;
+
+}
+
+/*Body CSS*/
+
+body{
+	background-color: #fff;
+
+}
+
+/*Navigation Bar CSS*/
+
+ul{
+
+
+}
+
+ul li{
+	list-style: none;
+	display: inline-block;
+	float: left;
+}
+
+ul li a{
+	color: black;
+	font-size: 15px;
+	font-family: helvetica, arial;
+	text-decoration: none;
+	line-height: 100px;
+	padding: 0 20px;
+	font-weight: bold;
+	display: block;
+	
+}
+
+ul li a:hover{
+	color: #483a84;
+}
+
+nav{
+	width: 100%;
+	height: 100px;
+	background-color: #E6E8F9;
+
+}
+
+/*Footer CSS*/
+
+footer{
+	text-align: center;
+	background-color: #E6E8F9;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+footer a{
+	text-decoration: none;
+	color: black;
+}
+
+footer a:hover{
+	color: #483a84;
+
+}
